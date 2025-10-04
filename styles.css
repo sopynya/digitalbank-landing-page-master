@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 26%, 24%);
+}
+header {
+    background-color: white;
+    padding: 10px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+}
+#hero {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    min-height: 650px;
+    overflow: hidden;
+}
+#hero h1 {
+    font-weight: 300;
+    font-size: 40px;
+    margin: 20px 0;
+}
+#background {
+    width: 1000px;
+    margin: -200px -220px;
+    z-index: -1;
+}
+#phones {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    max-width: 600px;
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+}
+.requestInvite {
+    background: linear-gradient(to top, hsl(192, 69%, 51%), hsl(136, 64%, 51%));
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 13px;
+    max-width: fit-content;
+    cursor: pointer;
+}
+.requestInvite:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.328)), linear-gradient(to top, hsl(192, 69%, 51%), hsl(136, 64%, 51%));
+}
+#divisor1 {
+    margin: 0 20px;
+    padding: 0 120px;
+    max-width: 400px;
+}
+#hero p {
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+}
+nav {
+    display: flex;
+    gap: 20px; 
+}
+nav a {
+    color: hsl(233, 8%, 62%);
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 300;
+    padding:20px 0;
+    border: 2px solid transparent;
+}
+nav a:hover {
+    border-bottom: 2px solid hsl(136, 64%, 51%);
+}
+#chooseUs {
+    background-color: hsl(220, 16%, 96%);
+    padding: 100px;
+}
+#chooseUs h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+#chooseUs p {
+    color: hsl(233, 8%, 62%);
+    margin: 30px 0;
+    font-weight: 300;
+}
+#reasons {
+    display: flex;
+    gap: 30px;
+}
+#reasons h3 {
+    font-weight: 400;
+    margin: 0;
+}
+#reasons p {
+    margin: 20px 0;
+}
+#reasons img {
+    margin: 30px 0;
+}
+#articles {
+    background-color: hsl(0, 0%, 98%);
+    padding: 70px 100px;
+}
+#articles h2 {
+    margin: 0 0 50px 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+#article {
+    display: flex;
+    gap: 20px;
+    
+}
+.article {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 200px;
+    max-height: 200px;
+}
+.article h3 {
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+}
+.article h3:hover {
+    color: hsl(136, 64%, 51%);
+    cursor: pointer;
+}
+.article p {
+    color: hsl(233, 8%, 62%);
+}
+.by {
+    font-size: 12px;
+    font-weight: 200;
+}
+.info {
+    font-size: 15px;
+}
+#articles img {
+    width: 260px;
+    height: 250px;
+    max-height: 200px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+footer {
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+#container {
+    display: flex;
+    gap: 100px;
+}
+#socials {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+.socials img {
+    cursor: pointer;
+}
+.navigation {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navigation p {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+.navigation p:hover {
+    color:hsl(136, 64%, 51%);
+}
+.copyright {
+    color: hsl(233, 8%, 62%);
+    font-size: 13px;
+}
+#copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#hamburguer {
+    display: none;
+    cursor: pointer;
+}
+#optionsbackground {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, hsla(233, 26%, 24%, 0.666), rgba(255, 255, 255, 0));
+    height: 100vh;
+    width: 100vw;
+}
+#options {
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 5px;
+    padding: 30px;
+    justify-content: center;
+    gap: 20px;
+}
+#options a {
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        display: none;
+    }
+    header .requestInvite {
+        display: none;
+    }
+    #background {
+        width: 600px;
+        margin: -200px 0;
+        z-index: -1;
+    }
+    #phones {
+        display: none;
+        
+    }
+    .phones {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        height: 500px;
+    }
+    #hero {
+        flex-direction: column-reverse;
+        gap: 300px;
+        padding-bottom: 30px;
+    }
+    #divisor1  {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #divisor1 h1 {
+        margin:  0;
+    }
+    #chooseUs {
+        padding:  50px 30px;
+        text-align: center;
+    }
+    #chooseUs p {
+        margin: 20px;
+    }
+    #reasons {
+        flex-direction: column;
+    }
+    #articles {
+        padding: 50px 30px;
+    }
+    #article {
+        flex-direction: column;
+    }
+    #articles h2 {
+        text-align: center;
+    }
+    #article img {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    #container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .navigation p {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    #socials {
+        margin-bottom: 40px;
+    }
+    #copyright {
+        margin-top: 40px;
+        align-items: center;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    #hamburguer {
+        display: block;
+    }
+}
