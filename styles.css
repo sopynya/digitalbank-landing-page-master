@@ -228,6 +228,8 @@ footer {
     font-size: 18px;
     cursor: pointer;
 }
+.phones {
+    display: none;
 @media (max-width: 480px) {
     header{
         padding: 20px;
