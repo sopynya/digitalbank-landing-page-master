@@ -250,6 +250,7 @@ footer {
         
     }
     .phones {
+        display: block;
         position: absolute;
         top: -50px;
         left: 50%;
